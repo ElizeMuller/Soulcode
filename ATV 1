@@ -1,0 +1,168 @@
+// Colégio João Ninguém
+String colegio = 'João Ninguém';
+
+//Aluno
+String aluno = 'Sam';
+// Notas
+Integer p1 = 7;
+Integer p2 = 8;
+Integer p3 = 5;
+Integer p4 = 9;
+Decimal media = (p1+p2+p3+p4)/4;
+
+If (media >= 7) {
+    //se sim, aprovado
+    System.debug ('Aprovado');
+        } else {
+            //se não, reprovado
+            System.debug ('Reprovado');
+        }
+System.debug('Aluno: ' + aluno + ' | Média Anual: ' + media );
+
+---------------------------------------------------------------
+// Sr. Josevaldo - Clientes
+String loja = 'Loja do Sr. Josevaldo';
+// Clientes
+String cliente1 = 'Rusbé';
+String cliente2 = 'Vilma';
+String cliente3 = 'Seraphine';
+
+Integer anon1 = 1987;
+Integer anon2 = 1998;
+Integer anon3 = 2000;
+
+Integer idade1 = (2022 - anon1);
+Integer idade2 = (2022 - anon2);
+Integer idade3 = (2022 - anon3);
+
+System.debug('Estabelecimento: '+ loja + ' Cliente: ' + cliente1 + ' Idade: ' + idade1);
+System.debug('Estabelecimento: '+ loja + ' Cliente: ' + cliente2 + ' Idade: ' + idade2);
+System.debug('Estabelecimento: '+ loja + ' Cliente: ' + cliente3 + ' Idade: ' + idade3);
+
+-----------------------------------------------------------------
+Integer a = 10;
+System.debug(a);
+System.debug(++a);
+System.debug(--a);
+System.debug(--a);
+
+----------------------------------------------------------
+Decimal n = 4/2;
+
+IF (n >= 0) {
+    System.debug('Positivo');
+} else {
+    System.debug('Negativo');
+}
+
+----------------------------------------------------------
+//‘Números iguais’, caso os números sejam iguais;     ==
+//‘Primeiro é maior’, caso o primeiro seja maior que o segundo;
+//‘Segundo maior’, caso o segundo seja maior que o primeiro. 
+
+Integer a = 12;
+Integer b = 13;
+
+
+IF(a == b){
+    System.debug('Números iguais');
+} else if (a > b){
+    System.debug('Primeiro Número é maior');
+} else if (a < b){
+    System.debug('Segundo Número é maior');
+}
+
+-----------------------------------------
+
+Decimal nccliente = 3240;
+Decimal saldo = 300.45;
+Decimal debito = 140.75;
+Decimal credito = 50;
+Decimal saldo_atual = (saldo - debito + credito);
+
+System.debug('Número da conta do cliente: ' + nccliente +' Saldo atual: ' + saldo_atual);
+IF(saldo_atual >= 0){
+    System.debug('Saldo Positivo');
+} else {
+    System.debug('Saldo Negativo');
+}
+
+-----------------------------------------------------
+String finalista1 = 'Brasil';
+String finalista2 = 'França';
+String campeao = finalista1;
+
+If(campeao == finalista1){
+    System.debug('HEXACAMPEÃO!!!');
+} else if(campeao == finalista2){
+    System.debug('TRICAMPEÃO!!!');
+}
+
+------------------------------------------------
+Decimal a = 5;
+Decimal b = 3;
+Decimal media = (a+b)/2;
+
+IF(a > b ){
+    System.debug(a + ' é o maior ' + b + ' é o menor ' + media + ' é a média');
+}else if(a < b){
+        System.debug(b + ' é o maior ' + a + ' é o menor ' + media + ' é a média');
+}
+
+-----------------------------------------------
+//09. Sr. Josevaldo tem uma mini mercearia no Bairro do Limoeiro, em comemoração ao aniversário da lojinha, 
+//ele quer fazer uma promoção, em que todos os itens fiquem com 15% de desconto. 
+//A cliente Magali quer comprar 5Kg de melancia, o valor da fruta era de R$ 3,99/Kg antes da promoção. 
+//Como você ajudaria o Sr. Josevaldo a fazer esse cálculo em Apex? 
+//Ele precisa que seja mostrado na notinha (seu System.debug) o nome do cliente, o item comprado, a quantidade,
+// o preço anterior, o preço atual, o valor total da compra sem a promoção e o valor total da compra com a promoção.
+// Além disso, no fim da notinha deve haver a informação de quanto (R$) foi a economia total do cliente.
+
+String evento = ' Promoção de Aniversário da Lojinha do Sr. Josevaldo ';
+String cliente1 = 'Magali';
+Integer quant = 5;
+Decimal melancia = 3.99;
+Decimal promo = melancia - ((melancia * 15)/100);
+Decimal promototal = (promo * quant);
+Decimal melancias = (melancia * quant);
+Decimal economia = (melancias - promototal);
+System.debug(evento);
+System.debug('Nome do Cliente: ' + cliente1);
+System.debug('Produto: ' + 'Melância ' + ' | Quantidade em Kg: ' + quant);
+System.debug('Preço original unitário: ' + melancia +  ' | Preço da promoção: ' + promo);
+System.debug('Valor total da compra sem a promoção: ' + ( melancia * quant));
+System.debug('Valor total da compra com a promoção: ' + promototal);
+System.debug('Valor economizado por unidade/Kg: ' + ((melancia * 15) /100));
+System.debug('Economia total: ' + economia);
+
+--------------------------------------------------------------
+
+//Sr. Josevaldo decidiu que na segunda semana da promoção de aniversário a promoção seria diferente:
+//Faça um algoritmo para definir: a descrição do produto(nome), a quantidade adquirida e o preço unitário. 
+//Calcular e escrever o total(total = quantidade adquirida * preço unitário), desconto e o total a pagar
+//(total a pagar = total - desconto), sabendo-se que:
+// quant <=5 desconto 2%
+// quant >5 && <=10 desconto de 3%
+// quant >10 desconto 5%
+
+String evento = ' Segunda Semana de Promoção de Aniversário da Lojinha do Sr. Josevaldo ';
+String cliente1 = 'Sanji';
+String nome = 'Café';
+Decimal preco = 6.5;
+Integer quant = 5;
+Decimal total = preco * quant;
+
+System.debug(evento);
+System.debug('Cliente: ' + cliente1);
+System.debug('Descrição do produto: ' + nome + ' |  Quantidade adquirida: ' + quant);
+System.debug('Preço unitário: ' + preco);
+
+IF(quant <=5){
+    System.debug('Total a pagar: ' + (total - (total * 2)/100) + ' | Desconto: ' + (total *2)/100 +  ' (Desconto de 2%)');
+} else if (quant > 5 && quant <= 10){
+    System.debug('Total a pagar: ' + (total - (total * 3)/100) + ' | Desconto: ' + (total *3)/100 +' (Desconto de 3%)');
+} else if(quant > 10){
+    System.debug('Total a pagar: ' +(total - (total * 5)/100)+ '  | Desconto: ' + (total *2)/100 +' (Desconto de 2%)');
+}
+
+
