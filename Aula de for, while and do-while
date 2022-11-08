@@ -1,0 +1,54 @@
+// Contagem de 5 em 5 até 150
+
+for(Integer cont = 5; cont <= 150; cont += 5){
+    System.debug(cont);
+}
+System.debug('Acabou o loop');
+
+-------------------------------------------------
+//Tabuada do 7
+
+for(Integer c=1; c <= 10; c++){
+    System.debug('7 x ' + c + ' = ' + (c * 7));
+}
+
+
+--------------------------------------------------------
+//Tabuada de n (com while)
+
+Integer n = 23;
+Integer c = 1;
+while(c <= 10){
+    System.debug(n +' x '+ c + ' = ' + (c * n));
+    c++;
+}
+
+------------------------------------------
+// Tabuada de n (com for)
+
+Integer n = 23;
+for(Integer c = 1; c <=10; c++){
+    System.debug(n + ' x ' + c + ' = ' + (c * n));
+}
+
+-------------------------------------------
+//While
+
+//Passa longe por a condição é FALSA
+
+Integer b = 15;
+while(b < 10){
+    System.debug(b);
+    b++;
+}
+
+// Do-while
+
+//faz pelo menos uma vez, por conta de sua estrutura
+
+Integer a = 15;
+do{
+    System.debug(a);
+    a++;
+}while(a < 10);
+
