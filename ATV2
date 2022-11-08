@@ -1,0 +1,67 @@
+//Escreva um algoritmo para receber uma temperatura em graus Fahrenheit, 
+//calcular e escrever o valor correspondente em graus Celsius (baseado na fórmula abaixo): 
+//(c/5) = (f-32)/9
+
+Decimal tf = 212;
+Decimal tc = (((tf - 32)/9)*5);
+//conversão ((tc/5) = (tf-32)/9);
+
+System.debug(tc);
+
+------------------------------
+// As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia,
+// e R$ 1,00 se forem compradas pelo menos 12. 
+// Escreva um programa que receba o número de maçãs compradas,
+// calcule e escreva o custo total da compra. 
+
+Integer quant = 6;
+
+If(quant < 12){
+    System.debug('Produto:  Maçã ');
+    System.debug('Preço unitário: ' + 1.30 + ' Quantidade: ' + quant);
+    System.debug('Preço total: ' + 1.30 * quant);
+} else if(quant >= 12){
+    System.debug('Produto:  Maçã ');
+    System.debug('Preço unitário: ' + 1.00 + ' Quantidade: ' + quant);
+    System.debug('Preço total: ' + 1.00 * quant);
+}
+    
+--------------------------------------
+
+String nome = 'Natanael';
+String sexo = 'M';
+Decimal altura = 1.95;
+
+System.debug(nome);
+System.debug(sexo);
+System.debug(altura);
+
+IF( sexo == 'M'){
+    System.debug('Peso ideal = ' + ((72.7 * altura) - 58));
+}else{
+    System.debug('Peso ideal = ' + ((62.1 * altura) - 44.7)); 
+}
+
+System.debug('Fim');
+
+
+---------------------------------------------
+
+//Receba o nome de 2 times e o número de gols marcados na partida (para cada time). 
+//Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra 
+//EMPATE.
+    
+String t1 = 'Alemanha';
+String t2 = 'Brasil';
+Integer g1 = 1;
+Integer g2 = 7;
+
+if(g1 > g2){
+   System.debug('Vencedor: ' + t1);
+} else if(g1 < g2){
+    System.debug('Vencedor: ' + t2);
+}else{
+    System.debug('EMPATE!!!');
+}
+
+----------------------------------------------
