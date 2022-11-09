@@ -133,6 +133,11 @@ if((a == b) && (b == c)){
 }
 
 ---------------------------------------------------------------
+System.debug('Início do Loop!');
+for(Integer c = 150; c <=1000; c += 150){
+    System.debug(c);
+}
+System.debug('Fim do Loop!');
 
  
  
