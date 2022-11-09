@@ -12,3 +12,37 @@ List<String> frutas = new List<String>{
   System.debug (frutas.get(2));
   System.debug (frutas.get(8));
 -----------------------------------------------------------
+// Crie uma lista com o nome de 6 alunos da sala(add) para cada operação realizada, mostrar a lista completa.
+
+List<String> alunos = new List<String>();
+    
+alunos.add('Davi');
+alunos.add('Vini');
+alunos.add('Bia');
+alunos.add('Gabi');
+alunos.add('Breno');
+alunos.add('Ale');
+ 
+System.debug(alunos);
+
+
+alunos.set(2, 'Geo');
+alunos.set(5, 'Dani');
+
+System.debug(alunos);
+
+alunos.add(0, 'Barbara');
+alunos.add(3, 'Vinicius');
+
+System.debug(alunos);
+
+alunos.remove(4);
+alunos.remove(6);
+
+System.debug(alunos);
+
+System.debug(alunos[3]);
+System.debug(alunos[4]);
+System.debug(alunos[5]);
+
+--------------------------------
