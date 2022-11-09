@@ -46,3 +46,18 @@ System.debug(alunos[4]);
 System.debug(alunos[5]);
 
 --------------------------------
+// Crie uma lista com o nome de 6 alunos da sala(add) para cada operação realizada, mostrar a lista completa.
+
+Map<String, String> contabancaria = new Map<String, String>();
+    
+contabancaria.put('agencia', '3030');
+contabancaria.put('conta', '567654');
+contabancaria.put('cpf', '33213030');
+contabancaria.put('saldo', '500');
+contabancaria.put('nome', 'Haru');
+ 
+System.debug(contabancaria.get('agencia'));
+System.debug(contabancaria.get('conta'));
+System.debug(contabancaria.get('cpf'));
+System.debug(contabancaria.get('saldo'));
+System.debug(contabancaria.get('nome'));
