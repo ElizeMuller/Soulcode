@@ -107,3 +107,23 @@ if(mediaap >=9.0){
 }
 
 -------------------------------------------------------------------------
+// ler a,b,c
+// (a < b + c) e (b <a+c) e (c <a+b)
+Integer a = 15;
+Integer b = 15;
+Integer c = 15;
+
+if(a < (b + c) && b <(a + c) && (c < a + b)){
+if((a == b) && (b == c)){
+    System.debug('Triângulo Equilátero');
+}else if ((a == b) || (b == c) || (a == c)){
+    System.debug('Triângulo Isósceles');
+}else{
+    System.debug('Triângulo Escaleno');
+}}else{
+  System.debug('Não foi possível formar um triângulo');
+} 
+ -------------------------------------------------------------------
+ 
+ 
+ 
