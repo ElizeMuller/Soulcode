@@ -1,0 +1,14 @@
+List<String> frutas = new List<String>{
+    'Morango' , 'Uva' , 'Melância' , 'Melão' , 'Açaí' , 'Banana' , 'Laranja' , 'Abacaxi' , 'Butiá' , 'Jabuticaba' , 'Coco'
+};
+// via colchetes
+    System.debug(frutas[6]);
+    System.debug(frutas[4]);
+    System.debug(frutas[1]);
+    System.debug(frutas[7]);
+// via get
+  System.debug (frutas.get(0));
+  System.debug (frutas.get(5));
+  System.debug (frutas.get(2));
+  System.debug (frutas.get(8));
+-----------------------------------------------------------
