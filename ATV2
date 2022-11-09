@@ -65,3 +65,23 @@ if(g1 > g2){
 }
 
 ----------------------------------------------
+String a = 'Álcool';
+String g = 'Gasolina';
+String produto = a;
+Decimal quant = 10;
+Decimal litroa = 2.90;
+Decimal litrog = 3.30;
+Decimal vta = quant * litroa;
+Decimal vtg = quant * litrog;
+
+IF(produto == a && quant <=20){
+    System.debug('Combustível: ' + produto + ' | Quantidade em Litros: ' + quant + ' | Valor total: R$' + (vta - (quant * (3 * litroa) / 100)).setScale(2));
+}else if(produto == a && quant > 20){
+    System.debug('Combustível: ' + produto + ' | Quantidade em Litros: ' + quant + ' | Valor total: R$' + (vta - (quant * (5 * litroa) / 100)).setScale(2));
+}else if(produto == g && quant <= 20){
+    System.debug('Combustível: ' + produto + ' | Quantidade em Litros: ' + quant + ' | Valor total: R$' + (vtg - (quant * (4 * litrog) / 100)).setScale(2));
+}else if(produto == g && quant > 20){
+    System.debug('Combustível: ' + produto + ' | Quantidade em Litros: ' + quant + ' | Valor total: R$' + (vtg - (quant * (6 * litrog) / 100)).setScale(2));
+}
+
+--------------------------------------------------------------
