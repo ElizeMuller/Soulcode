@@ -85,3 +85,25 @@ IF(produto == a && quant <=20){
 }
 
 --------------------------------------------------------------
+// Faça um algoritmo para ler as 3 notas obtidas por um aluno nas 3 verificações e a média dos exercícios que fazem parte da avaliação. 
+//Calcular a média de aproveitamento, usando a fórmula abaixo e escrever o conceito do aluno de acordo com a tabela de conceitos mais abaixo:
+Decimal n1 = 10;
+Decimal n2 = 7;
+Decimal n3 = 9;
+Decimal media_atvs = 9;
+Decimal mediaap = (n1 + (n2 * 2) + (n3 * 3) + media_atvs)/7;
+String nome = 'Luna';
+
+System.debug('Aluno(a): ' + nome);
+
+if(mediaap >=9.0){
+    System.debug('Conceito: ' + 'A');
+}else if(mediaap >= 7.5 && mediaap < 9.0){
+    System.debug('Conceito: ' + 'B');
+}else if(mediaap >=6.0 && mediaap < 7.5){
+    System.debug('Conceito: ' + 'C');
+}else if(mediaap < 6.0){
+    System.debug('Conceito: ' +'D');
+}
+
+-------------------------------------------------------------------------
