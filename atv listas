@@ -38,3 +38,39 @@ for(Integer valor : pares){
     System.debug(valor);
 }
 -------------------------------------------------------------
+List<String> series = new List<String>();
+
+series.add('B99');
+series.add('GOT');
+series.add('Sandman');
+series.add('The Witcher');
+series.add('HOD');
+series.add('Anne with an E');
+series.add('TWD');
+series.add('TVD');
+series.add('Breaking Bad');
+
+Integer ranking = 1;
+for(String valor : series) {
+    System.debug(ranking + ' - ' + valor);
+    ranking++;
+}
+
+----------------------------------------------------
+
+/*Crie uma Lista com os seguintes valores (A, B, C, D, E, F). 
+Baseado nas posições dessa lista, imprima as seguintes palavras.
+FACA
+BABA
+FADA
+ACABADA
+*/ 
+List<String> valores = new List<String>{
+    'A', 'B', 'C' , 'D' , 'E' , 'F'
+};
+    System.debug(valores[5] + valores[0] + valores[2] + valores[0]);
+    System.debug(valores[1] + valores[0] + valores[1] + valores[0]);
+    System.debug(valores[5] + valores[0] + valores[3] + valores[0]);
+    System.debug(valores[0] + valores[2] + valores[0] + valores[1] + valores[0] + valores[3] + valores[0]);
+----------------------------------------------------
+
