@@ -52,3 +52,48 @@ do{
     a++;
 }while(a < 10);
 
+
+
+--------------------
+list + for
+
+
+
+List<String> filmes = new List<String>();
+
+filmes.add('Aliens vs Predator');
+filmes.add('Jurassic World');
+filmes.add('Até o último homem');
+filmes.add('John Wick');
+filmes.add('Avatar 2');
+
+System.debug(filmes.size());
+
+for(Integer p = 0; p < 100; p +=2 ){
+    System.debug(filmes[p]);
+}
+
+filmes.add('Narnia');
+filmes.add('Sorria');
+filmes.add('Doutor Estranho');
+
+for(String filme : filmes){
+    System.debug(filme);
+}
+------------------------------------------------------
+List<Integer> par = new List<Integer>();
+
+For(Integer n =0;n <=100;n++ ){
+    If(math.mod(n, 2) ==0){
+    par.add(n);
+}
+}
+system.debug(par);
+-----------------------------
+List<Integer> pares = new List<Integer>();
+for(Integer c=2; c <=100; c += 2){
+    pares.add(c);
+}
+for(Integer valor: pares){
+    System.debug(valor);
+}
