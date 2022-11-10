@@ -72,3 +72,33 @@ Set é uma estrutura de dados não ordenada, dessa forma, ao realizar o print, p
 Map é uma estrutura de dados que além de necessitar de um valor, necessita de uma chave, é muito ordenado, sua estrutura se assemelha com o list, mas pode conter 2 tipagens em sua base (key, valor).
 
 -----------------------------------------
+List<Integer> anosh = new List<Integer>();
+for(Integer ano = 1986; ano <=3000; ano += 76){
+    anosh.add(ano);
+}
+
+for(Integer valor: anosh){
+    System.debug(valor);
+}
+---------------------------------------------------
+Map<String, Integer> semifinal1 = new Map<String, Integer>();
+semifinal1.put('Brasil', 7);
+semifinal1.put('Alemanha', 1);
+
+Map<String, Integer> semifinal2 = new Map<String, Integer>();
+semifinal2.put('Argentina', 5);
+semifinal2.put('Inglaterra', 3);
+
+If(semifinal1.get('Brasil') > semifinal1.get('Alemanha')){
+    System.debug('Final: ' + 'Brasil');
+}else{
+    System.debug('Final: ' + 'Alemanha');
+}
+
+System.debug(' X ');
+
+If(semifinal2.get('Argentina') > semifinal2.get('Inglaterra')){
+    System.debug('Final: ' + 'Argentina');
+}else{
+    System.debug('Final: ' + 'Inglaterra');
+}
