@@ -1,0 +1,6 @@
+String txt = 'oi eu sou um texto Qualquer';
+System.debug('Antes: ' + txt);
+txt = txt.toUpperCase();
+System.debug('Depois: ' + txt);
+
+----------------------------------
