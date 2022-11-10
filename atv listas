@@ -137,4 +137,21 @@ presentes.add('Uma biblioteca com salas de board-games');
 System.debug(presentes);
 
 -----------------------------------------------------
+/*
+2 LISTAS - Ingredientes e Medidas
+*/
+
+List<String> ing= new List<String>{
+    'Leite condensado', 'Manteiga', 'Chocolate'
+};
+System.debug(ing);
+
+List<String> med= new List<String>{
+    'Colher', 'Gramas', 'Lata'
+};
+System.debug(med);
+
+System.debug('Receita de brigadeiro' + '\n' + '\nIngredientes: ' + '\n02 ' + med[0] + ' de ' + ing[1] + '\n01 ' + med[2] + ' de ' + ing[0] + '\n250 ' + med[1] + ' de ' +ing[2]);
+System.debug('Modo de Preparo:' + '\n' + '\nEm uma panela, derreta a '+ ing[1] +' e logo após, acrescente o '+ ing[0]+', mexa' + '\nbem e quando estiver homogêneo acrescente o '+ ing[2]+', mexendo sempre.' + '\nQuanto atingir o ponto de sua preferência, desligue o fogo. Pronto.');
+-----------------------------------------------
 
