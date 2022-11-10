@@ -1,0 +1,40 @@
+List<String> bandas = new List<String>{
+   'O Teatro Mágico' , 'Coldplay' , 'Imagine Dragons' , 'Mr.Big' , 'Twenty One Pilots'  
+};
+    
+System.debug(bandas);
+
+bandas.remove(4);
+bandas.remove(3);
+
+System.debug(bandas);
+bandas.add('The Head and The Heart');
+bandas.add('Radiohead');
+bandas.add('Queen');
+
+System.debug(bandas);
+----------------------------------------------------------
+List<String> bandas = new List<String>{
+   'O Teatro Mágico' , 'Coldplay' , 'Imagine Dragons' , 'Mr.Big' , 'Twenty One Pilots',
+       'The Jackson 5', 'O Rappa ', '5 a seco'
+};   
+System.debug(bandas);
+
+bandas.set(3, 'Skank');
+System.debug(bandas);
+
+bandas.add(7, 'Engenheiros do Hawaii');
+System.debug(bandas);
+
+bandas.remove(7);
+System.debug(bandas);
+
+------------------------------------------------------
+List<Integer> pares = new List<Integer>();
+for(Integer c = 2; c <=100; c += 2){
+    pares.add(c);
+}
+for(Integer valor : pares){
+    System.debug(valor);
+}
+-------------------------------------------------------------
