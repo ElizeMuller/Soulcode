@@ -134,10 +134,47 @@ if((a == b) && (b == c)){
 
 ---------------------------------------------------------------
 System.debug('Início do Loop!');
-for(Integer c = 150; c <=1000; c += 150){
+for(Integer c = 150; c <=175; c++){
     System.debug(c);
 }
 System.debug('Fim do Loop!');
+--------------------------------------------------
+ System.debug('Início do Loop!');
+for(Integer dequanto = 150; dequanto <=175; dequanto += 8 ){
+    System.debug(dequanto);
+}
+System.debug('Fim do Loop!');
+ ----------------------------------------------------
+//Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não.
+//Para estar em condições, um dos seguintes requisitos deve ser satisfeito: 
 
- 
- 
+//Ter no mínimo 65 anos de idade. 
+// Ter trabalhado no mínimo 30 anos. 
+// Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos. 
+//Com base nas informações acima, faça um algoritmo que leia:
+//o número do empregado (código), o ano de seu nascimento e o ano de seu 
+//ingresso na empresa. O programa deverá escrever a idade e o tempo de 
+//trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
+
+String empresa = 'Ellon Musk e Jeffrey Bezos?';
+String assunto = 'aposentadoria';
+String funcionario = 'Lore';
+String nfunc = '131313';
+Integer anonasc = 1993;
+Integer anocontrat = 2007;
+Integer anoatual = 2022;
+Integer anostrab = anoatual - anocontrat;
+Integer idade = anoatual - anonasc;
+
+if(idade >= 65){
+    System.debug('Empresa: '+ empresa + '\nNome do funcionário: ' + funcionario +'\nCódigo do funcionário: ' + nfunc + '\nIdade: ' + idade + '\nTempo de trabalho em anos: '+ anostrab + '\nRequerer aposentadoria');
+}else if(anostrab >= 35){
+    System.debug('Empresa: '+ empresa + '\nNome do funcionário: ' + funcionario +'\nCódigo do funcionário: ' + nfunc + '\nIdade: ' + idade + '\nTempo de trabalho em anos: '+ anostrab + '\nRequerer aposentadoria');
+}else if(idade >= 60 && anostrab >= 25){
+    System.debug('Empresa: '+ empresa + '\nNome do funcionário: ' + funcionario +'\nCódigo do funcionário: ' + nfunc + '\nIdade: ' + idade + '\nTempo de trabalho em anos: '+ anostrab + '\nRequerer aposentadoria');
+}else{
+    System.debug('Empresa: '+ empresa + '\nNome do funcionário: ' + funcionario +'\nCódigo do funcionário: ' + nfunc + '\nIdade: ' + idade + '\nTempo de trabalho em anos: '+ anostrab + '\nNão requerer aposentadoria');
+}
+
+
+
