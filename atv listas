@@ -74,3 +74,48 @@ List<String> valores = new List<String>{
     System.debug(valores[0] + valores[2] + valores[0] + valores[1] + valores[0] + valores[3] + valores[0]);
 ----------------------------------------------------
 
+Map<String, String> mc = new Map<String, String>();
+
+mc.put('empresa', 'Mamaco Corp');
+mc.put('ceo','Rometo Brito');
+mc.put('valor', '8000000');
+mc.put('cpnj', '123321001-99');
+
+System.debug('A empresa ' + mc.get('empresa') + ' alcançou o valor de mercado de ' + mc.get('valor') +'.' + '\nO CEO ' + mc.get('ceo') + ' declarou ser o primeiro passo para dominar o mundo.');
+---------------------------------------------
+/*Crie uma três listas de itens pra assistir jogo de estreia do Brasil na Copa:
+Lista de quem você convocaria para a seleção Brasileira (pode ser qualquer um, não precisa nem ser jogador);
+Lista com os itens para fazer um churrasco;
+Lista com os itens de bebidas pro churrasco.
+
+Manipulando as listas:
+Cada lista deve conter pelo menos 11 itens;
+Depois que as listas estiverem prontas, você deve remover um item da lista de churrasco e um item da lista de bebidas.
+Faça 3 substituições na sua lista de convocados, ou seja, remova 3 pessoas e adicione outras 3.
+*/
+List<String> convidados = new List<String>{
+    'Bruno', 'Lore', 'Nana', 'Filipe', 'Luna', 'Sirius', 'Joe', 'Manaus', 'Natanael', 'Dudu', 'Herick'
+};
+System.debug(convidados);
+List<String> comidas = new List<String>{
+       'Vinagrete', 'Farofa', 'Alcatra', 'Maionese', 'Linguiça', 'Coxa de frango', 'Feijão Tropeiro', 'Pão', 'Pasta de alho', 'Sorvete', 'Mousse de maracujá' 
+};
+System.debug(comidas);
+List<String> bebidas = new List<String>{
+     'Coca-Cola', 'Mineiro', 'Fanta laranja', 'Fanta uva', 'Pepsi Twist', 'Heineken', 'Amstel', 'Skol', 'Corona', 'Suco de laranja', 'Suco de uva'   
+}; 
+System.debug(bebidas);
+
+comidas.remove(8);
+bebidas.remove(8);
+
+System.debug(comidas);
+System.debug(bebidas);
+
+convidados.set(7, 'Jéssica');
+convidados.set(6, 'Davi');
+
+System.debug(convidados);
+
+-------------------------------------------------
+ 
