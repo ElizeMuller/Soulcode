@@ -1,0 +1,74 @@
+List<String> musicas = new List<String>();
+musicas.add('Yellow');
+musicas.add('Você me Bagunça');
+musicas.add('Gérberas');
+musicas.add('SuperFantastic');
+musicas.add('Follow You');
+
+System.debug('Top 1: ' + musicas[0]);
+
+-------------------------------------------
+List<Integer> c = new List<Integer>();
+For(Integer v= 0; v <=30; v++ ){
+    c.add(v);
+}
+System.debug(c);
+for(Integer valor: c){
+    System.debug(valor);
+}
+-------------------------------------------
+List<Integer> anosn = new List<Integer>{
+    2001, 1993, 1989, 1991, 1963, 1965
+};
+   
+    System.debug(anosn);
+anosn.add(1, 2022);
+
+System.debug(anosn);
+
+--------------------------------------------
+String idade = '15';
+Integer idadeConvert = Integer.valueof(idade);
+System.debug(idade);
+
+--------------------------------------
+Map<String, String> pet = new Map<String, String>();
+pet.put('Nome', 'Totó');
+pet.put('Habilidade', 'Roubo de comida');
+pet.put('Cor', 'Caramelo');
+pet.put('Idade', '3 anos');
+pet.put('Comportamento', 'Agitado');
+
+System.debug(pet);
+
+------------------------------
+Map<String, String> friendst = new Map<String, String>();
+friendst.put('1ª temporada ', ' 24 episódios');
+friendst.put('2ª temporada ', ' 24 episódios');
+friendst.put('3ª temporada ', ' 25 episódios');
+friendst.put('4ª temporada ', ' 24 episódios');
+friendst.put('5ª temporada ', ' 24 episódios');
+friendst.put('6ª temporada ', ' 25 episódios');
+friendst.put('7ª temporada ', ' 24 episódios');
+friendst.put('8ª temporada ', ' 24 episódios');
+friendst.put('9ª temporada ', ' 24 episódios');
+friendst.put('10ª temporada ', ' 18 episódios');
+
+System.debug('1ª temporada ' + friendst.get('1ª temporada '));
+System.debug('2ª temporada '+ friendst.get('2ª temporada '));
+System.debug('3ª temporada '+ friendst.get('3ª temporada '));
+System.debug('4ª temporada '+ friendst.get('4ª temporada '));
+System.debug('5ª temporada '+ friendst.get('5ª temporada '));
+System.debug('6ª temporada '+ friendst.get('6ª temporada '));
+System.debug('7ª temporada '+ friendst.get('7ª temporada '));
+System.debug('8ª temporada '+ friendst.get('8ª temporada '));
+System.debug('9ª temporada '+ friendst.get('9ª temporada '));
+System.debug('10ª temporada '+ friendst.get('10ª temporada '));
+
+-------------------------------------------------------------------
+7º) Diferença entre List, Set e Map:
+List é uma forma de estruturar os dados de maneira ordenada, ou seja, há uma ordem estabelecida (as denominadas posições), além de que só pode armazenar uma tipagem de dados em sua base. Podemos acessar seus dados através das posições que a lista permite verificar.
+Set é uma estrutura de dados não ordenada, dessa forma, ao realizar o print, poderá verificar alterações na disposição dos dados fornecidos. Além do mais, vale ressaltar que o set não permite valores duplicados.
+Map é uma estrutura de dados que além de necessitar de um valor, necessita de uma chave, é muito ordenado, sua estrutura se assemelha com o list, mas pode conter 2 tipagens em sua base (key, valor).
+
+-----------------------------------------
