@@ -118,4 +118,23 @@ convidados.set(6, 'Davi');
 System.debug(convidados);
 
 -------------------------------------------------
+ /*
+Faça sua lista pro Papai Noel, você deve pedir 5 presentes.
+Remova o 2º e o 4º presentes.
+Adicione um presente.
+
+*/ 
+
+List<String> presentes = new List<String>{
+    'Uma casa na floresta', 'Reforma do grupo escoteiro', 'Um jeep savana', 'um casal de araras-canindés (legais e mansas)', 'uma casa com pomar e viveiro perto da praia'
+};
  
+    System.debug(presentes);
+presentes.remove(1);
+presentes.remove(3);
+presentes.add('Uma biblioteca com salas de board-games');
+
+System.debug(presentes);
+
+-----------------------------------------------------
+
